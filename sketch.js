@@ -109,7 +109,7 @@ function draw() {
         score = score + Math.round(getFrameRate()/60);
         path.velocityX = -(6 + 3*score/100);
         
-        if((touches.length > 1 || keyDown("SPACE")) && boy.y  >= height-280) {
+        if((touches.length > 0.2 || keyDown("SPACE")) && boy.y  >= height-280) {
           jumpSound.play( )
          boy.velocityY = -15;
            touches = [];
